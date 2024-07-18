@@ -14,8 +14,29 @@
     <script>
       window.addEventListener("resize", navigator.keyboard.lock(["Escape"]))
     </script>
+            <script>
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, bottom-center, top-left, top-right
+	}
+		</script>
+	<script async src="//api.adinplay.com/libs/aiptag/pub/SWT/iogames.forum/tag.min.js"></script>
   </head>
   <body>
+    <center>
+        	<div id='iogames-forum_970x90'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('iogames-forum_970x90'); });
+		</script>
+	</div>
+          </center>
     <nav class="nav" id="right-side-nav">
       <ul id="tab-list"></ul>
       <button title="add-tab" id="add-tab">
